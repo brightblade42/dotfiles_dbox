@@ -23,4 +23,5 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
-eval "$(~/.local/bin/mise activate bash)"
+eval "$(/bin/mise activate bash)"
+eval "$(zoxide init bash)"
