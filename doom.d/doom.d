@@ -1,1 +1,0 @@
-/home/eyemetric/distrobox/dev_env/dotfiles/doom.d

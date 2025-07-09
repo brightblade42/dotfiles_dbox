@@ -8,10 +8,10 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 ln -s ~/dotfiles/zellij ~/.config/zellij
 
 #install the nvim config
-git clone --depth 1 https://github.com/brightblade42/kickstart.nvim ~/.config/nvim
+git clone --depth 1 https://github.com/brightblade42/kickstart.nvim ~/dotfiles/nvim
 
 #install the dooms
-git clone https://github.com/doomemacs/doomemacs ~/.config/emacs
+git clone https://github.com/doomemacs/doomemacs ~/dotfiles/emacs
 #hold off on the install. it takes a while
 #~/.config/emacs/bin/doom install
 
