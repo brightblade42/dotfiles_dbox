@@ -69,7 +69,6 @@ copy_file .bashrc $HOME
 
 echo "installing languages and runtimes. go, rust, deno"
 #should we check if it's installed already or does mise do that?
-eval "$(/bin/mise activate bash)"
 execute mise install golang@latest
 execute mise install rust@latest
 execute mise install deno@latest
@@ -77,6 +76,7 @@ execute mise install deno@latest
 execute mise use golang@latest
 execute mise use rust@latest
 execute mise use deno@latest
+execute eval "$(/bin/mise activate bash)"
 
 echo "Do you want to install DOOM Emacs now? type Y or N"
 read wants_doom
