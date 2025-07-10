@@ -76,7 +76,6 @@ execute mise install deno@latest
 execute mise use golang@latest
 execute mise use rust@latest
 execute mise use deno@latest
-execute eval "$(/bin/mise activate bash)"
 
 echo "Do you want to install DOOM Emacs now? type Y or N"
 read wants_doom
