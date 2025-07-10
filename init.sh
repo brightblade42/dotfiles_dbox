@@ -3,8 +3,6 @@
 # !!!!!  RUN THIS INSIDE THE CONTAINER !!!!!!
 
 
-
-
 XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
 dry="0"
 
@@ -71,6 +69,7 @@ copy_file .bashrc $HOME
 
 echo "installing languages and runtimes. go, rust, deno"
 #should we check if it's installed already or does mise do that?
+eval "$(/bin/mise activate bash)"
 execute mise install golang@latest
 execute mise install rust@latest
 execute mise install deno@latest
