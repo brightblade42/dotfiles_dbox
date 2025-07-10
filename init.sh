@@ -65,6 +65,7 @@ copy_file() {
 
 echo "copying dotfiles...."
 copy_dir .config $XDG_CONFIG_HOME
+copy_dir .doom.d $HOME
 copy_file .bashrc $HOME
 
 echo "installing languages and runtimes. go, rust, deno"
