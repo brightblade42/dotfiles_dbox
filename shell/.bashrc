@@ -1,5 +1,7 @@
 # .bashrc
 
+export PATH="$HOME/dotfiles/bin:$PATH"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
