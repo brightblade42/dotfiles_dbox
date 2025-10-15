@@ -1,6 +1,9 @@
 # .bashrc
 
-export PATH="$HOME/dotfiles/bin:$PATH"
+export PATH="$HOME/dev_env/bin:$PATH"
+export XDG_CONFIG_HOME="$HOME/.config"
+export EMACSDIR="$XDG_CONFIG_HOME/emacs"
+export DOOMDIR="$XDG_CONFIG_HOME/doom"
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -27,3 +30,4 @@ fi
 unset rc
 eval "$(/bin/mise activate bash)"
 eval "$(zoxide init bash)"
+export PATH="$HOME/.config/emacs/bin:$PATH"
