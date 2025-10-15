@@ -31,3 +31,35 @@ unset rc
 eval "$(/bin/mise activate bash)"
 eval "$(zoxide init bash)"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+
+#aliases
+alias ll='eza -la'
+alias lt='eza --tree'
+alias ls='eza'
+alias cat='bat --paging=never'
+alias find='fd'
+alias grep='rg'
+alias ps='procs'
+alias top='btop'
+alias du='dust'
+alias df='duf'
+
+# Git aliases
+alias gs='git status'
+alias gd='git diff'
+alias gl='git log --oneline --graph'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gco='git checkout'
+
+# Directory navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Terminal multiplexers
+alias zj='zellij'
+
+
+
